@@ -149,7 +149,7 @@ export default function BusinessSolutionsPage() {
     },
   ]
 
-  const categories = ["Food & Snacks", "Beverages", "Personal Care", "Household Products", "Baby Care", "Pet Care"]
+  const brands = ["Ajinomoto", "Indomie", "Indofood", "Siwak-F", "Steviana"]
 
   if (isSubmitted) {
     return (
@@ -424,17 +424,17 @@ export default function BusinessSolutionsPage() {
                 </div>
 
                 <div>
-                  <Label>Product Categories of Interest *</Label>
+                  <Label>Brands of Interest *</Label>
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-2">
-                    {categories.map((category) => (
-                      <div key={category} className="flex items-center space-x-2">
+                    {brands.map((brand) => (
+                      <div key={brand} className="flex items-center space-x-2">
                         <Checkbox
-                          id={category}
-                          checked={formData.productCategories.includes(category)}
-                          onCheckedChange={(checked) => handleCategoryChange(category, checked as boolean)}
+                          id={brand}
+                          checked={formData.productCategories.includes(brand)}
+                          onCheckedChange={(checked) => handleCategoryChange(brand, checked as boolean)}
                         />
-                        <Label htmlFor={category} className="text-sm">
-                          {category}
+                        <Label htmlFor={brand} className="text-sm">
+                          {brand}
                         </Label>
                       </div>
                     ))}
