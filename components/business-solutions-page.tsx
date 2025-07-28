@@ -536,7 +536,7 @@ export default function BusinessSolutionsPage() {
                 <Mail className="h-12 w-12 text-blue-400 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2 text-white">Email Us</h3>
                 <p className="text-gray-300 mb-2">Business Inquiries</p>
-                <p className="text-blue-400 font-semibold">business@sbtc.com.sa</p>
+                <p className="text-blue-400 font-semibold">business@sbtcgroup.com</p>
                 <p className="text-sm text-gray-400 mt-2">Response within 24 hours</p>
               </CardContent>
             </Card>

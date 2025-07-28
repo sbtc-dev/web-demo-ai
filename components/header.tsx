@@ -22,11 +22,11 @@ export default function Header() {
             <div className="flex items-center space-x-6">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span>+966 11 234 5678</span>
+                <span>+966 50 399 8181</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>support@sbtc.sa</span>
+                <span>support@sbtcgroup.com</span>
               </div>
             </div>
             <div className="flex items-center space-x-4">
