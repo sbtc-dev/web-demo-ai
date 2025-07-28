@@ -85,7 +85,8 @@ export default function BusinessSolutionsPage() {
       minOrder: "SAR 5,000",
       discount: "5-8%",
       features: ["Standard delivery", "Email support", "Monthly invoicing", "Basic reporting"],
-      badge: "Most Popular",
+      badge: "Bronze",
+      bgColor: 'bg-amber-700',
     },
     {
       name: "Growth Business",
@@ -98,7 +99,8 @@ export default function BusinessSolutionsPage() {
         "Advanced analytics",
         "Custom packaging",
       ],
-      badge: "Best Value",
+      badge: "Silver",
+      bgColor: 'bg-gray-500',
     },
     {
       name: "Enterprise",
@@ -112,7 +114,8 @@ export default function BusinessSolutionsPage() {
         "API integration",
         "Quarterly business reviews",
       ],
-      badge: "Premium",
+      badge: "Gold",
+      bgColor: 'bg-yellow-600',
     },
   ]
 
@@ -243,7 +246,7 @@ export default function BusinessSolutionsPage() {
             {pricingTiers.map((tier, index) => (
               <Card key={index} className={`relative ${index === 1 ? "ring-2 ring-blue-500 scale-105" : ""}`}>
                 {tier.badge && (
-                  <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600">
+                  <Badge className={`${tier.bgColor} absolute -top-3 left-1/2 transform -translate-x-1/2`}>
                     {tier.badge}
                   </Badge>
                 )}
